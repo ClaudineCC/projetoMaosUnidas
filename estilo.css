@@ -1,0 +1,1163 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+
+/*Criando regras utilizando o fluxo do MOBILE FIRST*/
+
+/*Regras Gerais   CLAU*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+
+
+/* Regras do topo  HEADER  DANIELLE */
+
+.navbar {
+    display: flex;
+    /*USAR NO MEDIA QUERY*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.0rem 1.5rem;
+    /* background-color: #af3434; */
+    background-image: url(../imagem/rodapeOndasOrganicasInnvertido.png);
+
+}
+
+.logo {
+    display: flex;
+    
+}
+
+
+ .pesquisa {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+   
+}
+
+.pesquisa :hover {
+    fill: darkre;
+    /* Altera a cor do ícone ao passar o mouse sobre ele */
+}
+
+.pesquisa form {
+    display: flex;
+    
+ } 
+
+ .pesquisa input[type="text"] {   /* botao buscar*/
+    width: 100px;
+    padding: 5px;
+    font-size: 10px;
+    
+} 
+
+
+ .pesquisa button[type="submit"] {
+    background-color: rgb(20, 19, 19);
+    padding: 2px 2px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 10px;
+   
+} 
+
+.pesquisa button[type="submit"]:hover {
+    background-color: darkred;
+    
+} 
+
+.pesquisa :hover {
+    fill: #af3434;
+    /* Altera a cor do ícone ao passar o mouse sobre ele */
+} 
+
+
+
+
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#myBtn {
+    border-radius: 75px;
+}
+
+
+
+
+/* menu hamburguer  começa como bloco */
+#iconMenu {
+    display: none;
+
+
+}
+
+
+
+
+
+/* menu descritivo */
+.menu {
+    text-align: center;
+    padding: 10px;
+    /* background-color: #af3434; */
+    color: white;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 18px;
+    /* Aumenta o tamanho da letra para 18px */
+}
+
+.menu a:first-child {
+    margin-left: 0;
+}
+
+.menu a:hover {
+    color: rgb(243, 10, 10);
+
+}
+
+
+/* menu de icones - ultimo item do header*/
+
+.IconesMenu {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.IconesMenu :hover{
+transform: scale(1.1);
+}
+
+
+
+
+
+
+/* Regras do footer  RODAPE  CLAUDINE */
+
+#footer {
+    background-image: url(../imagem/rodapeOndasOrganicas.png);
+    background-repeat: repeat;
+}
+
+
+.logo-footer {
+    margin: 10px;
+    padding: 4px;
+}
+
+.redes-footer img {
+    width: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    display: inline-block;
+    padding: 6px;
+
+}
+
+
+
+.assinatura-footer {
+    background-color: #dbdada;
+    /* Cor de fundo  */
+    border: 2px solid #af3434;
+    /* Borda superior cinza claro */
+    padding: 10px;
+    /* Espaçamento interno */
+    font-family: Arial, sans-serif;
+    /* Fonte elegante */
+    font-size: 10px;
+    /* Tamanho da fonte */
+    color: #161616;
+    text-align: center;
+    /* Alinhamento centralizado */
+}
+
+
+
+
+
+
+/* Regras para a pagina INDEX  CLAUDINE  */
+
+/* {box-sizing:border-box}*/
+
+
+
+.slidershow-carrosel0 {
+    max-width: 100%;
+    text-align: center;
+    /*background-color: #a14b4b;*/
+    /*background-color:  rgb(230, 200, 83);*/
+
+}
+
+.slides img {
+    border-radius: 25px;
+}
+
+/* botoes proximo next e anterior previus*/
+.anterior,
+.proximo {
+    cursor: pointer;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.9s ease;
+    user-select: none;
+
+}
+
+/* posicione o botao "proximo" next a direita*/
+.proximo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* ao passar o mouse (on hover) adicione uma cor preta com pouca transparencia*/
+.anterior:hover,
+.proximo:hover {
+    background-color: rgb(219, 81, 81);
+
+}
+
+
+/* Pontos/marcadores = dots/bullets/ */
+.dot {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+.active .dot:hover {
+    background-color: rgb(219, 81, 81);
+}
+
+
+/* div imagem + anote ai*/
+
+.imagemDicas1 {
+    background-color: #f0eaea;
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+    border: solid #af3434;
+    border-radius: 15px;
+    padding: 8px;
+
+
+}
+
+
+.seCadastre {
+    color: #af3434;
+    font-size: 25px;
+    margin: 10px;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+ .seCadastre :hover{
+    transition: 500ms linear;  
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+
+}
+
+
+.seCadastre button {
+    color: #1877f2;
+    background: #f0eaea;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    
+  }
+
+
+/* Acordeon abre/fecha */
+.accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 4px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+/* Adicione uma cor de fundo ao botão se ele for clicado (adicione a classe .active com JS) e quando você passar o mouse sobre ele (passar o mouse) */
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+/* painel acordeon estilizado. Note: hidden por padrao */
+.painel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+
+}
+
+
+#video {
+    background-color: #af3434;
+    text-align: center;
+    width: 100%;
+}
+
+
+.acessorios p {
+    /* ilustração liga a pagina html de acessorios para cozimento*/
+    border: none;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  
+}
+
+
+.acessorios p:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+.logo3 {
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* pagina ACESSORIOS*/
+
+.todoConteudo {
+    background-color: #f0eaea;
+    margin: 10px;
+
+}
+
+.fotosAcessorios {
+    max-width: 100%;
+    padding: 2px;
+    margin: 2px;
+    align-items: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Regras para a área do conteudo principal   CLAUDINE , PEDRO*/
+
+.conteudo {
+    max-width: 95%;
+}
+
+.carrosel {
+    border-radius: 25px;
+    margin: 5px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    /* alinhar imagem*/
+
+}
+
+/* Efeito de transformação quando o mouse passa por cima */
+.carrosel:hover {
+    transform: scale(1.1);
+    /* Aumenta o tamanho em 10% */
+
+}
+
+
+
+.imagem-principal {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+.frase-pagina-destaque {
+    font-size: 14px;
+    background-color: #eb3030;
+    color: #dbdada;
+    text-align: center;
+    margin: 0.5px;
+    padding: 0.5px;
+    border-radius: 15px;
+
+}
+
+.temaPagina {
+    background-color: rgb(230, 200, 83);
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #af3434;
+    border-radius: 15px;
+    border: #201d1d;
+    padding: 5px;
+    box-shadow: 3px 3px 3px 1px #d6d3d3;
+    /* efeito sombra*/
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.temaPagina:hover {
+    /*efeito escala*/
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+
+}
+
+
+
+
+.cards {
+    background-color: #eeeae8;
+    padding: 2px;
+    /* align-items: center; */
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.5s;
+
+    /* efeito drop shadow*/
+
+
+}
+
+.cards :hover {
+    -webkit-filter: drop-shadow(8px 4px 2px rgba(0, 0, 0, .1));
+    filter: drop-shadow(8px 4px 2px rgba(0, 0, 0, .1));
+
+}
+
+.cards img {
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px rgb(219, 81, 81);
+
+
+}
+
+.frase-cards a {
+    background-color: #edf1f5;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+
+.slogan img {
+    margin-bottom: -5px;
+    padding: -5px;
+    align-items: center;
+    width: 300px;
+
+}
+
+
+.irParaTopo p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* regras para PAGINAS AUXILIARES    CAMILA  e Claudine*/
+
+
+.conteudo {
+    background-color: #e9e6e6;
+    margin: 2px;
+    padding: 2px;
+    margin: auto;
+    width: 100%;
+
+}
+
+.imagem-principal img {
+    border-radius: 25px;
+    display: flex;
+
+}
+
+
+/* .tema_ingredientes{
+border:1px solid black;
+} */
+
+.dicasTempoServe {
+    border: 1px solid black;
+    border-color: #ea4335;
+    padding: 10px;
+    margin-bottom: 30px;
+    /* background-color: #d6d3d3; */
+
+    /* efeito gradiente */
+
+    background: -webkit-linear-gradient(left, #d6d3d3, rgb(230, 200, 83), #ea4335);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d6d3d3, rgb(230, 200, 83), #ea4335);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d6d3d3, rgb(230, 200, 83), #ea4335);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(right, #d6d3d3, rgb(230, 200, 83), #ea4335);
+    /* Standard syntax */
+}
+
+
+.dicasTempo {
+    display: flex;
+    gap: 8px;
+}
+
+.dicasServe {
+    display: flex;
+    gap: 8px;
+}
+
+
+
+.tema {
+    border: 1px solid black;
+    border-color: #ea4335;
+    padding: 10px;
+    margin: 0.5px;
+    margin-bottom: 0.5px;
+    background-color: #d6d3d3;
+
+}
+
+
+.ingredientes {
+    border: 1px solid black;
+    background-color: #fdfbfb;
+    margin-left: 17px;
+
+}
+
+
+.preparo {
+    border: 1px solid black;
+    background-color: #fdfbfb;
+    margin-left: 17px;
+}
+
+.voltarPagina a {
+    color: #161616;
+    size: 25px;
+    margin: 5px;
+
+}
+
+
+
+
+/* COMPARTILHAR whatts, PDF e enviar por email CLAUDINE*/
+
+.compartilharImprimir a {
+    color: #161616;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.compartilharImprimir {
+    text-align: block
+}
+
+
+/* VOTAÇÃO ESTRELAS  - busca no site   CLAUDINE */
+
+.estrelas {
+    text-align: center;
+    padding-top: 15px;
+    align-items: center;
+    display: flex;
+    margin: 5px;
+}
+
+
+.estrelas input[type=radio] {
+    display: none;
+
+}
+
+.estrelas label i.fa {
+    font-size: 2.0em
+}
+
+
+.estrelas label i.fa:before {
+    content: '\f005';
+    color: rgb(230, 200, 83);
+}
+
+.estrelas input[type=radio]:checked~label i.fa:before {
+    color: #CCC;
+
+}
+
+
+
+/* PAGINA EM CONSTRUCAO    CLAUDINE*/
+
+.paginaConstrucao {
+
+    font-size: 35px;
+    margin: 20px;
+    transition: all .5s;
+    border: 10px solid #eeeeee;
+    align-items: center;
+    text-align: center;
+
+}
+
+.paginaConstrucao :hover {
+    border: 10px solid rgb(219, 81, 81);
+    border-radius: 10%;
+    /* -webkit-filter: drop-shadow(10px 5px 1px rgba(0,0,0,.5));
+    filter: drop-shadow(10px 5px 1px rgba(0,0,0,.5));
+    -webkit-transform: rotateZ(-360deg) scale(1.5);
+    transform: rotateZ(-360deg) scale(1.5); */
+}
+
+
+
+
+
+/*regras PARA MODAL LOGIN  DANIELLE*/
+
+
+
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+    /*Ajuste o tamanho do logotipo conforme necessário */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.facebook-login,
+.google-login {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.facebook-login {
+    background-color: #1877f2;
+    margin-right: 10px;
+}
+
+.google-login {
+    background-color: #ea4335;
+    margin-left: 10px;
+}
+
+.separator {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    text-align: center;
+    cursor:pointer;
+    padding: 4px;
+   
+   }
+
+   .register-link :hover{
+    opacity: 0.5;
+  
+   }
+
+
+.register-link a {
+    text-decoration: none;
+    color: #007bff;
+   
+}
+
+
+
+/* regras para o MODAL - CADASTRAR  DANIELLE*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(245, 22, 6, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #ea4335;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ea4335;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: b31616;
+}
+
+.requirements {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+
+/* regras para o MODAL - DICAS -BOTAO  DANIELLE*/
+
+
+
+/* .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */
+
+
+
+
+
+/* Modal Camila */
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn {
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+/* Regras do footer  RODAPE  CLAUDINE */
+
+.logoRedes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+
+
+
+/* regras para PAGINAS AUXILIARES    CAMILA  e Claudine*/
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imagem-principal img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-principal p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    #iconMenu {
+        display: block;
+        /* menu hamburguer */
+
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+
+/* .slidershow-carrosel0 {
+    max-width: 100%;
+    position: relative; 
+    width: 800px;
+    height: 400px;
+} */
+
+
+
+
+@media screen and (min-width: 600px) {
+
+    .pormenores {
+        /* lado a lado  = "clique aqui" e "slogan+logo grande"*/
+        margin: 25px;
+        align-items: center;
+    }
+
+    .slides img {
+        /* carrosel da pagina INDEX  CLAUDINE  */
+        height: 250px;
+        width: 400px;
+    }
+
+    .imagem-principal img {
+        /* foto unica de cada pagina de receitas  CLAUDINE  */
+        height: 150px;
+        width: 400px;
+    }
+
+
+    .cards p, .img .slogan{   /* fotos das 10 receitas de cada pagina de menu principal  CLAUDINE  */
+        padding: 5px;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+
+
+         
+    
+    }
+    
+
+
+    .cards img {
+        /* fotos das 10 receitas de cada pagina de menu principal  CLAUDINE  */
+        height: 190px;
+        width: 290px;
+       
+       
+    }
+
+}
+
+
+@media screen and (min-width: 860px) {
+
+    .pormenores {
+        /* lado a lado  = "clique aqui" e "slogan+logo grande"*/
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 25px;
+
+    }
+
+    .slides img {
+        /* carrosel da pagina INDEX  CLAUDINE  */
+        height: 300px;
+        width: 490px;
+    }
+
+
+    .imagem-principal img {
+        /* foto unica de cada pagina de receitas  CLAUDINE  */
+        height: 150px;
+        width: 450px;
+    }
+
+
+    .cards img {
+        /* fotos das 10 receitas de cada pagina de menu principal  CLAUDINE  */
+        height: 230px;
+        width: 380px;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* PAGINA EM CONSTRUCAO    CLAUDINE*/
+
+.paginaConstrucao {
+
+    padding: 250px;
+}
